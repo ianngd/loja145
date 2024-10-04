@@ -37,3 +37,12 @@ ul {
     gap: 30px;
     letter-spacing: 1px;
 }
+
+main {
+    height: 92vh;
+    background-image: url('assets/setup-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: center;
+    background-size: cover;
+}
