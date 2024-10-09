@@ -1,0 +1,125 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
+main{
+    padding: 20px;
+    background-color: var(--cor-fundo);
+
+}
+
+body{
+    font-family: 'Baloo Paaji 2';
+    background-color: var(--cor-fundo);
+
+}
+
+:root {
+ --cor-fundo: rgb(236, 234, 234);
+    font-size: 14px;
+ --cor-fundo-card: white;
+
+}
+
+
+h2,h3,strong{
+    font-weight: bold;
+}
+
+h1, h2{
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+/*em font-size: 1.5rem - unidade de medida relativa ao font-ssize do elemento raiz (html)*/
+/*em font-size: 1.5em - unidade de medida relativa ao font-ssize do elemento pai (html)*/
+
+.produtos-lista{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;     /*usar o flex wrap para responsividade sem definir medidas, não resolve.. Sem definição ele ocupa todo o espaço disponível ao inves de empilhar*/
+    gap: 12px;
+}
+
+.produtos-lista .produto{
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    width: 200px;
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 25px;
+    gap: 12px;
+    background-color: var(--cor-fundo-card);
+/*CSS TRANSFORM PROPERTY*/
+    transition: 0.9s;
+}
+
+.produtos-lista .produto:hover{
+/*CSS TRANSFORM PROPERTY*/
+    /*background-color: rgb(192, 14, 14);*/
+    transform: scale(1.1) ;
+}
+
+.produtos-lista .produto img {
+    width: 200px;
+}
+
+.produtos-lista .produto span {
+    text-align: justify;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #d5d5c9;
+}
+
+nav {
+    background-color: #23232e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    letter-spacing: 1px;
+}
+
+main {
+    height: 92vh;
+    background-image: url('assets/setup-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: center;
+    background-size: cover;
+}
