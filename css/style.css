@@ -178,3 +178,40 @@ h3{
     gap: 12px;
     color: black
 }
+
+
+.sobre{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;     /*usar o flex wrap para responsividade sem definir medidas, não resolve.. Sem definição ele ocupa todo o espaço disponível ao inves de empilhar*/
+    gap: 12px;
+    padding: 25px;
+    justify-content: center;
+}
+
+.sobre .descricao{
+    justify-content: center;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 300px;
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 12px;
+    background-color: var(--cor-fundo-card);
+/*CSS TRANSFORM PROPERTY*/
+    transition: 0.9s;
+}
+
+
+.sobre .descricao img {
+    width: 200px;
+}
+
+.sobre .descricao h3 {
+    text-align: center;
+    color: black;
+}
