@@ -1,16 +1,56 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
 
-main{
-    padding: 20px;
-    background-color: var(--cor-fundo);
 
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     font-family: 'Baloo Paaji 2';
     background-color: var(--cor-fundo);
+}
 
+nav {
+    background-color: #23232e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    letter-spacing: 1px;
+}
+
+main {
+    height: 92vh;
+    background-image: url('assets/setup-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: center;
+    background-size: cover;
+    padding: 20px;
+    background-color: var(--cor-fundo);
 }
 
 :root {
@@ -20,6 +60,8 @@ body{
 
 }
 
+
+    /*configurações da pagina de produtos*/
 
 h2,h3,strong{
     font-weight: bold;
@@ -75,51 +117,64 @@ h3{
     text-align: justify;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+    /*configurações da homepage*/
 
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #d5d5c9;
-}
-
-nav {
-    background-color: #23232e;
+.banner {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Isso garante que a imagem fique centralizada */
+    padding: 25px;
+}
+    
+.banner img {
+    width: 100%; /* A imagem ocupará 100% da largura disponível */
+    max-width: 100%; /* Garante que a imagem não fique maior que o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+    
+
+.novidades{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;     /*usar o flex wrap para responsividade sem definir medidas, não resolve.. Sem definição ele ocupa todo o espaço disponível ao inves de empilhar*/
+    gap: 12px;
+    padding: 25px;
+    justify-content: center;
+}
+
+.novidades .produto{
+    justify-content: center;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 200px;
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-direction:column;
     align-items: center;
-    height: 8vh;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 12px;
+    background-color: var(--cor-fundo-card);
+/*CSS TRANSFORM PROPERTY*/
+    transition: 0.9s;
 }
 
-.logo {
-    text-transform: uppercase;
-    letter-spacing: 4px;
+.novidades .produto:hover{
+/*CSS TRANSFORM PROPERTY*/
+    /*background-color: rgb(192, 14, 14);*/
+    transform: scale(1.1) ;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: 0.4s;
+.novidades .produto img {
+    width: 200px;
 }
 
-a:hover {
-    opacity: 0.7;
+.novidades .produto h3 {
+    text-align: center;
+    color: black;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    letter-spacing: 1px;
-}
-
-main {
-    height: 92vh;
-    background-image: url('assets/setup-1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: center;
-    background-size: cover;
+.page-title h2 {
+    padding: 30px;
+    gap: 12px;
+    color: black
 }
