@@ -181,6 +181,53 @@ h3{
 }
 
 
+.quadro{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;     /*usar o flex wrap para responsividade sem definir medidas, não resolve.. Sem definição ele ocupa todo o espaço disponível ao inves de empilhar*/
+    gap: 12px;
+    padding: 25px;
+    justify-content: center;
+}
+
+.quadro .descricao{
+    justify-content: center;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 300px;
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 12px;
+    background-color: var(--cor-fundo-card);
+}
+
+
+.quadro .descricao .produto-cadastro {
+    text-align: justify;
+    color: black;
+    padding: 10px;
+}
+
+
+/* montando a footer */
+footer nav {
+    background-color: #23232e;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    height: 18vh;
+
+}
+
+footer nav ul {
+    padding:10px;
+}
+
+
 .sobre{
     margin-top: 24px;
     display: flex;
@@ -215,18 +262,4 @@ h3{
 .sobre .descricao h3 {
     text-align: center;
     color: black;
-}
-
-/* montando a footer */
-footer nav {
-    background-color: #23232e;
-    display: flex;
-    justify-content:end;
-    align-items: center;
-    height: 18vh;
-
-}
-
-footer nav ul {
-    padding:10px;
 }
