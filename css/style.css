@@ -43,7 +43,8 @@ ul {
 }
 
 main {
-    height: 92vh;
+    flex: 1;
+    /*height: 92vh;*/
     background-image: url('assets/setup-1.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -214,4 +215,18 @@ h3{
 .sobre .descricao h3 {
     text-align: center;
     color: black;
+}
+
+/* montando a footer */
+footer nav {
+    background-color: #23232e;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    height: 18vh;
+
+}
+
+footer nav ul {
+    padding:10px;
 }
